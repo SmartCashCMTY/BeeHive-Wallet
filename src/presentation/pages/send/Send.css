@@ -1,0 +1,250 @@
+.page-send .privateKey {
+    background: #0c0c0d;
+    border-radius: var(--borderRadius);
+    padding: var(--spacer);
+    display: flex;
+    flex-wrap: wrap;
+    color: #999;
+}
+
+.page-send .privateKey p {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.page-send .privateKey p span {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.page-send .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #999;
+    border-radius: var(--borderRadius);
+    margin-top: var(--spacer-lg);
+}
+
+.page-send .address {
+    border-bottom: 1px solid #999;
+}
+
+.page-send .fiat {
+    width: 200px;
+}
+
+.page-send .amount,
+.page-send .amountInSmart {
+    flex: 1;
+    align-items: center;
+}
+
+.page-send .amount button {
+    margin-left: auto;
+    border: 1px solid #999;
+    background: none;
+    color: #999;
+    border-radius: var(--borderRadius);
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.page-send .amount button:hover,
+.page-send .amount button:focus {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    outline: 0;
+}
+
+.page-send .amount button ~ button {
+    margin-left: 7px;
+}
+
+.page-send .amountToSendError {
+    color: var(--primary);
+}
+
+.page-send .message {
+    border-top: 1px solid #999;
+}
+
+.page-send .transactionInfo {
+    margin-top: var(--spacer);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page-send .transactionInfo > div {
+    padding-left: var(--spacer);
+    padding-right: var(--spacer);
+}
+
+.page-send .transactionInfo .label {
+    font-size: 13px;
+    color: #999;
+    margin: 0 0 10px;
+}
+
+.page-send .transactionInfo .value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+.page-send button[type='submit'] {
+    border: 0;
+    outline: 0;
+    margin: var(--spacer) 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    width: 170px;
+    background: var(--primary);
+    border-radius: var(--borderRadius);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.page-send button[type='submit']:disabled {
+    background: #999;
+    color: #0c0c0d;
+    opacity: 0.5;
+    margin: 0;
+}
+
+.page-send .invalidAddress {
+    width: 100%;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    color: var(--primary);
+}
+
+.page-send .hasBeenSent {
+    background: var(--primary);
+    padding: var(--spacer);
+    border-radius: var(--borderRadius);
+    color: #333;
+    margin-bottom: var(--spacer-lg);
+    position: relative;
+}
+
+.page-send .hasBeenSent p {
+    margin: 0;
+    padding: 0;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.page-send .hasBeenSent .btnClose {
+    border: 1px solid #333;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    border-radius: 100%;
+    font-size: 12px;
+    text-align: center;
+    padding: 6px 10px;
+}
+
+.page-send .hasBeenSent button {
+    margin-top: 25px;
+    display: block;
+    color: #333;
+    border: 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.page-send .showPK {
+    border: 1px solid #999;
+    background: none;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #999;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.page-send .walletEmpty {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacer-lg);
+    color: var(--primary);
+}
+
+.page-send .btnCopy {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    fill: #fff;
+    position: relative;
+}
+
+.page-send .btnCopy:active {
+    fill: var(--primary);
+}
+
+.page-send .btn.copy {
+    position: relative;
+}
+
+.page-send .btn.copy:active::after {
+    content: 'Copied';
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, calc(-100% - 10px));
+    background: #333;
+    color: #fff;
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.page-send .SendError {
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    border-radius: var(--borderRadius);
+    position: relative;
+}
+
+.thumb-vertical {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: inherit;
+    background-color: var(--primary);
+}
+
+.page-send .loading {
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+.page-send .buttonsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 52px;
+}
+
+.page-send .buttonsWrapper img {
+    display: block;
+}

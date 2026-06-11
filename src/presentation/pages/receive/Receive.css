@@ -1,0 +1,103 @@
+.page-receive .qrcode {
+    width: 240px;
+    height: 240px;
+    padding: var(--spacer);
+    border-radius: var(--borderRadius);
+    background: #ffffff;
+    margin: 0 auto var(--spacer-lg);
+    position: relative;
+}
+
+.page-receive .qrcode .btnWrapper {
+    position: absolute;
+    right: -200px;
+    bottom: 0;
+    width: 190px;
+}
+
+.page-receive .qrcode .btnWrapper button ~ button {
+    margin-top: 16px;
+}
+
+.page-receive .qrcode .btnIcon {
+    display: flex;
+    align-items: center;
+}
+
+.page-receive .qrcode .btnIcon ~ .btnIcon {
+    margin-top: 16px;
+}
+
+.page-receive .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #999;
+    border-radius: var(--borderRadius);
+    margin-top: var(--spacer-lg);
+}
+
+.page-receive .address {
+    border-bottom: 1px solid #999;
+}
+
+.page-receive .fiat {
+    width: 200px;
+}
+
+.page-receive .amount {
+    max-width: 220px;
+}
+
+.page-receive .amount,
+.page-receive .amountInSmart {
+    flex: 1;
+    align-items: center;
+    border-left: 1px solid #999;
+}
+
+.page-receive .amountInSmart input {
+    font-size: 16px;
+}
+
+.page-receive option {
+    color: #333;
+}
+
+.page-receive .btnCopy {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    fill: #fff;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+.page-receive .btnCopy:active {
+    fill: var(--primary);
+}
+
+.page-receive .btn.copy {
+    position: relative;
+}
+
+.page-receive .btn.copy:active::after {
+    content: 'Copied';
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, calc(-100% - 10px));
+    background: #333;
+    color: #fff;
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.page-receive .descIcon {
+    color: var(--primary);
+    font-size: 12px;
+    margin: 0 0 0 8px;
+    width: 350px;
+    text-align: left;
+}

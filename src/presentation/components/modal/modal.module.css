@@ -1,0 +1,184 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    display: flex;
+}
+
+.modal {
+    z-index: 100;
+    background: #333;
+    position: relative;
+    border-radius: 3px;
+    max-width: 700px;
+    padding: 2rem;
+    margin: auto;
+    color: #fff;
+    width: 100%;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.75rem;
+}
+
+.modal-body {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+
+.modal-close-button {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    opacity: 0.7;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.modal-title {
+    color: var(--primary);
+    margin-bottom: -10px;
+}
+
+.address-content {
+    display: flex;
+    flex-wrap: wrap;
+    word-break: break-all;
+}
+
+.address-content p ~ p {
+    margin-top: 0;
+}
+
+.address-content button.btn {
+    background: var(--primary);
+    border: 0;
+    color: #333;
+    padding: 16px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    margin: 16px 0 0;
+    cursor: pointer;
+}
+
+.address-content button:hover {
+    background: var(--black);
+    color: #fff
+}
+
+.new-address {
+    width: 100%;
+}
+
+.import-address {
+    width: 100%;
+}
+
+.new-address input,
+.import-address input,
+.import-address textarea {
+    background: none;
+    resize: none;
+    width: 100%;
+    min-height: 50px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 16px;
+    color: #fff;
+    font-size: 16px;
+    font-family: inherit;
+    resize: none;
+}
+
+.password-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper button {
+    margin: 0 0 0 15px;
+    white-space: nowrap;
+}
+
+.address-content p.loading {
+    display: block;
+    margin: 10px auto 0;
+    text-align: center;
+    width: 100%;
+}
+
+.accept {
+    margin-top: 20px;
+    margin-bottom: 0;
+    height: 20px;
+}
+
+.buttonArea {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.inputPass {
+    flex: 1;
+    padding: 16px;
+    resize: none;
+    background: #000;
+    border: 0;
+    border-radius: 4px;
+    outline: 0;
+    color: var(--primary);
+    width: 100%;
+    height: 100%;
+}
+
+.btnShow {
+    background: var(--primary);
+    border: 0;
+    color: #333;
+    padding: 16px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    margin: 16px 0 0;
+    cursor: pointer;
+}
+
+.btnOpen {
+    background: var(--primary);
+    border: 0;
+    color: #333;
+    padding: 16px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    margin: 26px 0 0;
+    cursor: pointer;
+}
