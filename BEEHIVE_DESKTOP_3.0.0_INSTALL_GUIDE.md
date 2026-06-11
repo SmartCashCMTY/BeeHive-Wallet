@@ -45,7 +45,7 @@ domain is available.
 - 4 vCPU recommended
 - 8 GB RAM minimum, 16 GB recommended
 - 20 GB free disk space
-- Node.js 18.x and npm 9.x tested
+- Node.js 20.x LTS and npm 10.x tested
 
 ## 3. Download And Verify Release Builds
 
@@ -135,7 +135,7 @@ npm install --legacy-peer-deps
 npm start
 ```
 
-If Webpack/OpenSSL errors appear on Node.js 18, the package scripts already set:
+If Webpack/OpenSSL errors appear on Node.js 20, the package scripts already set:
 
 ```text
 NODE_OPTIONS=--openssl-legacy-provider
@@ -271,7 +271,7 @@ workflow currently builds Windows ZIP artifacts from Ubuntu.
 
 ### Which Node.js version is recommended?
 
-Node.js 18.x is tested for this repository.
+Node.js 20.x LTS is tested for this repository.
 
 ### Why use `--legacy-peer-deps`?
 
