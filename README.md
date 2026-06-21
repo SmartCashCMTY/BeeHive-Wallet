@@ -18,6 +18,10 @@ npm run build:linux
 ## System Requirements
 - Ubuntu 24.04 LTS or similar Linux build host
 - Node.js and npm
+
+## Hardware Requirements
+- 2 vCPU, 2 GB RAM, 30 GB SSD recommended
+- Development machine with display for GUI testing
 - Git, build tools, and a working internet connection
 
 ## Installation
